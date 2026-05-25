@@ -38,4 +38,9 @@ Original base project: StargateProject SG1 software from the BuildAStargate/Jord
 
 Additional source/idea credit: Feature idea by Marcin/Codex using existing StargateProject config API behavior.
 
+Retro UI credit: When this add-on patches the Retro Admin menu, that Retro UI/menu code comes from the Polklabs project:
+https://github.com/polklabs/stargate-retro
+
+Marcin/Codex modification: this repository adds the Silence on/off UI and scripts, then places the control into classic and Polklabs-derived Retro menus when available.
+
 How much is copied or changed: Small UI/config patch only.
