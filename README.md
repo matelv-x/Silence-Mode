@@ -1,13 +1,15 @@
-# Silence Mode
+# Silence Mode UI
 
-Adds an Admin menu Silence toggle using existing config.htm hardware switches.
+Adds a Silence button to classic and Retro Admin menus using existing config keys.
 
 This repository is private while it is being checked and verified.
 
 ## Install
 
+Clone or unzip this add-on into `/home/pi`, then run:
+
 ```bash
-cd /home/pi/Stargate-Final_Patches
+cd /home/pi
 rm -rf Silence-Mode
 git clone https://github.com/matelv-x/Silence-Mode.git
 cd Silence-Mode
@@ -19,24 +21,21 @@ sudo systemctl restart stargate.service
 ## Restore / uninstall
 
 ```bash
-cd /home/pi/Stargate-Final_Patches/Silence-Mode
-chmod +x restore.sh
+cd /home/pi/Silence-Mode
 sudo ./restore.sh --target /home/pi/sg1_v4
 sudo systemctl restart stargate.service
 ```
 
 ## What it changes
 
-- Adds Silence button to classic and Retro Admin menus.
-- Toggles audio_enable, chevron_motors_enable and stepper_motor_enable.
-- Does not patch classes/web_server.py.
+- Toggles `audio_enable`, `chevron_motors_enable`, and `stepper_motor_enable`.
+- Does not patch `classes/web_server.py`.
+- Includes `silence_on.sh`, `silence_off.sh`, and `status.sh`.
 
 ## Attribution and originality
 
 Original base project: StargateProject SG1 software from the BuildAStargate/Jordan/Kristian/Jonnerd project lineage.
 
-Additional source/idea credit: Feature idea by Marcin/Codex, using the existing StargateProject config API and config.htm behavior.
+Additional source/idea credit: Feature idea by Marcin/Codex using existing StargateProject config API behavior.
 
-How much is copied or changed: Small UI patch. It only patches web menu JS/CSS and includes command-line fallback scripts.
-
-The included `*.patch` file, when present, shows the exact text-level changes against the base software used while packaging.
+How much is copied or changed: Small UI/config patch only.
