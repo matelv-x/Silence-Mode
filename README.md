@@ -1,5 +1,7 @@
 # Silence Mode UI
 
+[![Downloads](https://img.shields.io/github/downloads/matelv-x/Silence-Mode/total?label=downloads)](https://github.com/matelv-x/Silence-Mode/releases)
+
 Adds a Silence button to classic and Retro Admin menus using existing config keys.
 
 This repository is private while it is being checked and verified.
