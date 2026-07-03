@@ -4,8 +4,6 @@
 
 Adds a Silence button to classic and Retro Admin menus using existing config keys.
 
-This repository is private while it is being checked and verified.
-
 ## Install
 
 Clone or unzip this add-on into `/home/pi`, then run:
