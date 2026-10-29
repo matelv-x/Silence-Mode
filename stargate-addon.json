@@ -1,5 +1,6 @@
 {
   "maintenance_contract": 1,
+  "uninstall_contract": 2,
   "id": "silence-mode",
   "name": "Silence Mode",
   "repository": "matelv-x/Silence-Mode",
